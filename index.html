@@ -3,42 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- displays site properly based on user's device -->
-
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
 	<title>Frontend Mentor | Product preview card component</title>
-
-	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-	<style>
-		.attribution {
-			font-size: 11px;
-			text-align: center;
-		}
-
-		.attribution a {
-			color: hsl(228, 45%, 44%);
-		}
-	</style>
+	<link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+	<link rel="stylesheet" href="src/css/main.min.css">
 </head>
 <body>
+	<div class="container">
+		<div class="card">
+			<div class="card__image-content">
+				<img class="card__img-mobile" src="src/images/image-product-mobile.jpg" alt="product image mobile"
+					loading="lazy">
+				<img class="card__img-desktop" src="src/images/image-product-desktop.jpg" alt="product image desktop"
+					loading="lazy">
+			</div>
+			<div class="card__text-content">
+				<div class="card__category-name">Perfume</div>
+				<h2 class="card__heading">Gabrielle Essence Eau De Parfum</h2>
+				<p class="card__description">
+					A floral, solar and voluptuous interpretation composed by Olivier Polge,
+					Perfumer-Creator for the House of CHANEL.
+				</p>
+				<div class="card__prices">
+					<span class="card__new-price">$149.99</span>
+					<span class="card__old-price">$169.99</span>
+				</div>
+				<button class="card__add-to-cart-button"><img src="src/images/icon-cart.svg" alt="cart"
+						loading="lazy">&nbsp;&nbsp;Add to Cart</button>
+			</div>
+		</div>
 
-	Preview
-
-	Gabrielle Essence Eau De Parfum
-
-	A floral, solar and voluptuous interpretation composed by Olivier Polge,
-	Perfumer-Creator for the House of CHANEL.
-
-	$149.99
-	$169.99
-
-	Add to Cart
-
-	<footer class="attribution">
-		Challenge by <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
-			target="_blank">Frontend Mentor</a>.
-		Coded by <a href="https://github.com/slweston" target="_blank">Scott Weston</a>.
-	</footer>
+		<footer class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+				target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://github.com/slweston" target="_blank">Scott Weston</a>.
+		</footer>
+	</div>
 </body>
 </html>
